@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #0e254d;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .back {
+            padding: 20 px;
+            display: block;
+            color : rgb(250, 250, 250);
+            text-decoration: none;
+            background-color: rgb(160, 158, 158);
+            text-align: center;
+            cursor: pointer;
+            
+        }
+        .back:hover {
+            background-color: rgb(55, 54, 54); /* Ubah warna background saat mouse hover */
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: block;
+        }
+
+        h1, p {
+            text-align: center;
+        }
+
+        .info {
+            margin-bottom: 15px;
+        }
+
+        .info span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="https://4.bp.blogspot.com/-lVM70hxEo1E/Ukzq0L4bhAI/AAAAAAAAAZo/khUxmZ1Uo1s/s1600/bakso+malang.JPG" alt="Foto Profil" class="profile-img">
+    <h1>Kadek Dana Widianta</h1>
+    <div class="info">
+        <p><span>Alamat : </span> Jalan Raya Kerobokan, Banjar Campuan</p>
+        <p><span>Instagram : </span><a href="https://www.instagram.com/danawidianta_/">danawidianta_</a></p>
+        <p><span>Email: </span><a href="danawidianta899@gmail.com">danawidianta899@gmail.com</a> </p>
+    </div>
+  <div class = "back" 
+    <a href="index.html" id="homeLink">KEMBALI KE BERANDA</a> <!-- Tambahkan ID untuk tautan kembali ke beranda -->
+    </div>
+</div>
+<script>
+    // Ambil tautan untuk kembali ke beranda
+    var homeLink = document.getElementById("homeLink");
+
+    // Tambahkan event listener untuk klik pada tautan kembali ke beranda
+    homeLink.addEventListener("click", function(event) {
+        event.preventDefault(); // Mencegah perilaku bawaan dari tautan
+        window.location.href = "index.html"; // Ganti "index.html" dengan halaman beranda Anda
+    });
+</script>
+
+</body>
+</html>

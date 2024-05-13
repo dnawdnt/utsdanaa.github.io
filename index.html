@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arduino VS ESP-32</title>
+    <style>
+        /* CSS untuk tata letak halaman */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;  /*font isi web*/
+            min-height: 100vh; /* Tinggi minimum halaman */
+            background:rgba(0,0,0,0.7);
+           
+        }
+        header {
+            background-color: #000000;
+            color: #fff;
+            margin-left: 250px;
+            padding: 20px;
+            text-align: center;
+        }
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            background-color : black;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-size: cover;
+            background-position: center;
+            padding-top: 60px; /* Sesuaikan dengan tinggi header */
+            overflow-y: auto; /* Mengaktifkan scroll vertikal jika konten melebihi ukuran layar */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            
+        }
+        .sidebar a {
+            padding: 5px;
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            background-color: #848e92;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .sidebar a:hover {
+            background-color: rgb(114, 104, 104); /* Ubah warna border saat mouse hover */
+        }
+        .content {
+            margin-left: 250px; /* Lebar sidebar */
+            margin-bottom: 0px;
+            padding: 20px;
+            padding-top: 80px; /* Sesuaikan dengan tinggi header dan sidebar */
+            text-align: justify; /* Rata kanan dan kiri */
+            background:rgba(0,0,0,0.7)url(vs.png);
+            background-blend-mode: darken;
+            background-size: contain;
+            background-position: center;
+            color: #fff; 
+            
+
+        }
+        p {
+            text-indent: 10px;
+        }
+        footer {
+            margin-top: 20px; /* Tinggi footer */
+            margin-left: 250px;
+            text-align : center;
+            color : #fff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Perbedaan ESP 32 dengan Arduino</h1>
+</header>
+
+<div class="sidebar">
+    <a href="form.html">LOGIN</a><br>
+    <a href="index1.html">BERANDA</a><br>
+    <a href="profil.html">KONTAK PENULIS</a><br>
+</div>
+
+<div class="content">
+    <section>
+        <h2>Apa itu ESP 32?</h2>
+        <p>ESP32 adalah sebuah mikrokontroler yang dikembangkan oleh 
+            perusahaan Espressif Systems. Ini adalah penerus dari 
+            mikrokontroler ESP8266 yang terkenal dan terkenal karena 
+            kemampuannya yang kuat dan beragam fitur yang ditawarkannya. 
+            Berikut adalah beberapa fitur utama dari ESP32:</p>
+                <ol>
+                    <li><b>Dual-core Processor:</b> ESP32 dilengkapi dengan dua core 
+                        Xtensa LX6 yang dapat berjalan hingga 240 MHz, yang memungkinkan 
+                        untuk pemrosesan paralel dan kinerja yang lebih baik.</li>
+                    <li><b>WiFi dan Bluetooth:</b> ESP32 mendukung WiFi 802.11 b/g/n 
+                        (WiFi 4) dan Bluetooth 4.2 BLE (Bluetooth Low Energy), sehingga 
+                        cocok untuk berbagai aplikasi IoT yang membutuhkan konektivitas nirkabel.</li>
+                    <li><b>Memori:</b> ESP32 memiliki memori yang lebih besar dibandingkan 
+                        dengan ESP8266. Ini memiliki SRAM hingga 520 KB, dan juga memiliki 
+                        flash memory hingga 16 MB</li> 
+                    <li><b>GPIO:</b> ESP32 memiliki sejumlah pin GPIO yang 
+                        dapat digunakan untuk berbagai tujuan, seperti 
+                        input/output digital, PWM, SPI, I2C, UART, dll.</li>
+                    <li><b>Fitur-fitur Lainnya:</b> ESP32 juga dilengkapi dengan 
+                        berbagai fitur tambahan seperti ADC (Analog to Digital Converter),
+                         DAC (Digital to Analog Converter), RTC (Real-Time Clock), Touch Sensors, dan masih banyak lagi.</li>      
+                </ol>
+            <p>ESP32 telah menjadi salah satu mikrokontroler yang populer di kalangan 
+                pengembang dan hobiis karena kinerja tingginya, kemampuan konektivitas 
+                yang kuat, serta berbagai fitur dan fleksibilitas yang ditawarkannya. 
+                Hal ini membuatnya menjadi pilihan yang ideal untuk berbagai proyek IoT dan embedded systems.</p>
+            <br>
+        <h2>Apa itu Arduino?</h2>
+        <p>Arduino adalah platform perangkat keras sumber terbuka yang digunakan untuk membuat prototipe dan proyek elektronik. Arduino terdiri dari papan mikrokontroler yang dapat diprogram dan berbagai sensor dan perangkat tambahan yang dapat terhubung ke papan mikrokontroler tersebut. Ini memungkinkan penggunanya, baik pemula maupun ahli, untuk membuat berbagai macam proyek elektronik yang meliputi otomatisasi rumah, robotika, kendaraan mandiri, sistem pemantauan, dan banyak lagi.</p>
+        <p>Arduino didasarkan pada mikrokontroler yang dapat diprogram, biasanya menggunakan bahasa pemrograman Arduino yang berbasis pada bahasa pemrograman C/C++. Arduino memiliki antarmuka perangkat lunak yang mudah digunakan sehingga cocok untuk pemula, namun juga fleksibel dan kuat sehingga digunakan oleh para profesional dan hobiis yang berpengalaman.</p>
+        <p>Salah satu keunggulan utama Arduino adalah sifatnya yang open-source, yang berarti desain perangkat keras, perangkat lunak, dan dokumentasi tersedia untuk umum. Hal ini memungkinkan komunitas Arduino untuk berkembang pesat dan banyaknya proyek-proyek, tutorial, dan sumber daya lain yang tersedia secara online.</p>  
+    </section>
+</div>
+<div class = "footer">
+<footer>
+    <h2>© Copyright Dana Widianta</h2>
+</footer>
+
+</body>
+</html>
